@@ -156,7 +156,34 @@ const developControl = document.querySelector(".js-develop-button");
 const resetControl = document.querySelector(".js-reset-button");
 const polaroidPhoto = document.querySelector(".js-photo");
 
+
+// Danh sách các ảnh có thể hiển thị
+const images = [
+  "img/nm/nm1.gif",
+  "img/nm/nm2.jpg",
+  "img/nm/nm3.jpg",
+  "img/nm/nm4.jpg",
+  "img/nm/nm5.jpg",
+  "img/nm/nm6.jpg",
+  "img/nm/nm7.jpg",
+  "img/nm/nm8.jpg",
+  "img/nm/nm9.jpg",
+  "img/nm/nm10.jpg",
+  "img/nm/nm11.jpg",
+  "img/nm/nm12.jpg",
+  "img/nm/nm13.jpg",
+  "img/nm/nm14.jpg"
+];
+
 developControl.addEventListener("click", () => {
+
+  // Chọn một ảnh ngẫu nhiên từ danh sách
+  const randomImage = images[Math.floor(Math.random() * images.length)];
+  
+  console.log(randomImage)
+  // Đổi ảnh
+  polaroidPhoto.src = randomImage;
+
   polaroidPhoto.classList.add("is-developed");
 });
 
