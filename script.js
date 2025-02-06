@@ -172,7 +172,9 @@ const images = [
   "img/nm/nm11.jpg",
   "img/nm/nm12.jpg",
   "img/nm/nm13.jpg",
-  "img/nm/nm14.jpg"
+  "img/nm/nm14.jpg",
+  "img/nm/nm15.jpg",
+  "img/nm/nm16.jpg"
 ];
 
 developControl.addEventListener("click", () => {
