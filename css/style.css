@@ -214,3 +214,27 @@ to   { -moz-transform: rotate(0deg) }
 
 
 }
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .login-form {
+    margin-top: 250px;
+  }
+
+  .input{
+    width: 150px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;  /* Căn giữa theo chiều ngang */
+    align-items: center;      /* Căn giữa theo chiều dọc */
+    height: 100%;              /* Đảm bảo chiều cao để căn giữa theo chiều dọc */
+  }
+
+  .row h2 {
+    font-size: 30px; /* Kích thước chữ nhỏ hơn khi trên điện thoại */
+  }
+
+}
