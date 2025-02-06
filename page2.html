@@ -36,8 +36,8 @@
         }
 
         .text {
-            width: 50%;
-            padding-right: 50px;
+            width: 40%;
+            padding: 50px;
             transform: rotate(-5deg);
         }
 
@@ -54,12 +54,11 @@
         }
 
         .photo {
-            /* display: block; */
             border-style: solid;
             border-color: white;
             border-width: 15px 15px 15px 15px;
-            max-width: 80%;
-            max-height: 50%; 
+            max-width: 100%;
+            max-height: 500px; 
             object-fit: contain;
 
             /* position: relative; */
@@ -99,7 +98,7 @@
             }
 
             100% {
-                filter: blur(1px) brightness(100%) saturate(100%);
+                filter: blur(0px) brightness(100%) saturate(100%);
             }
         }
         @media screen and (max-width: 800px) {
@@ -119,6 +118,8 @@
                 left: 0;
                 right: 0;
                 margin: auto;
+                max-width: 80%;
+                max-height: 50%; 
             }
         }
     </style>
