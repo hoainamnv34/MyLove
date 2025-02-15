@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var secondsElement = document.getElementById("seconds");
   var dateElement = document.querySelector("date");
 
-  var endDay = new Date("2025-02-11T00:00:00");
+  var endDay = new Date("2025-02-12T00:00:00");
 
 
   dateElement.textContent = Math.floor(
